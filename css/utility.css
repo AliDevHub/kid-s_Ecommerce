@@ -1,0 +1,449 @@
+
+:root {
+    --primary-color: #FF4747;
+    --success-color: #40C351;
+    --gray-color: #F5F5F7;
+    --sementic-red-color: #FF4E36;
+    --Semantic-green: #40C351;
+    --sementic-blue-color: #24658A;
+    --disable-color: #777777;
+
+    --light-pink-color: #FBD7E3;
+    --light-yellow-color: #FCE9C0;
+    --light-green-color: #D3F8D7;
+    --light-blue-color: #CCE6FB;
+
+    --white-color: #ffffff;
+
+    --heading-color: #062129;
+    --body-text-color: #3E3E3E;
+    --border-color: #DDE4EF;
+    --card-bg-color: #F8F8FA;
+
+    --card-border-radius: 8px;
+    --border-radius: 4px;
+    --sign-border-radius: 12px;
+    --sign-padding: 2.5rem;
+
+    /* Button */
+    --btn-hover: #E54040;
+
+    --large-btn-border-radius: 8px;
+    --large-btn-padding: 10px 24px;
+
+    --m-large-btn-border-radius: 8px;
+    --m-large-btn-padding: 10px 24px;
+
+    --m-btn-border-radius: 4px;
+    --m-btn-padding: 10px 20px;
+
+    --s-btn-border-radius: 4px;
+    --s-btn-padding: 10px 16px;
+
+
+    --heading-font-family: "Fredoka", sans-serif;
+    --body-font-family: "Nunito", sans-serif;
+    --fw7: 700;
+    --fw6: 600;
+    --fw5: 500;
+    --fw4: 400;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font-family);
+    color: var(--heading-color);
+    margin: 0;
+}
+
+
+
+h1 {
+    font-size: 4.5rem;
+    line-height: 86px;
+    font-weight: var(--fw6);
+}
+
+h2 {
+    font-size: 3.5rem;
+    line-height: 66px;
+    font-weight: var(--fw6);
+}
+
+h3 {
+    font-size: 2.5rem;
+    line-height: 48px;
+    font-weight: var(--fw4);
+}
+
+.sub-heading-1{
+    font-size: 2.3rem;
+    line-height: 40px;
+    font-weight: var(--fw5);
+}
+
+.sub-heading-2{
+    font-size: 2rem;
+    line-height: 40px;
+    font-weight: var(--fw5);
+}
+
+.sub-heading-3{
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-weight: var(--fw5);
+}
+
+.sub-heading-4{
+    font-size: 1.3rem;
+    line-height: 26px;
+    font-weight: var(--fw5);
+}
+
+.sub-heading-5{
+    font-size: 1.2rem;
+    line-height: 26px;
+    font-weight: var(--fw5);
+}
+
+p{
+    font-weight: var(--fw4);
+    color: var(--body-text-color);
+    font-family: var(--body-font-family);
+    margin: 0;
+}
+
+.body-tex-1 {
+    font-size: 18px;
+    line-height: 28px;          
+}
+
+.btsb {
+    font-family: var(--body-font-family);
+    line-height: 26px;
+    font-size: 18px; 
+    font-weight: var(--fw6);       
+}
+
+.body-tex-2 {
+    font-size: 16px;
+    line-height: 24px;          
+}
+
+.body-tex-3 {
+    font-size: 14px;
+    line-height: 20px;          
+}
+
+.M-body-tex-2-b {
+    font-size: 16px;
+    line-height: 24px; 
+    font-weight: var(--fw6);  
+    font-family: var(--body-font-family);
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--body-font-family);
+}
+
+button {
+    font: inherit;
+}
+
+span{
+    font-family: var(--body-font-family);
+}
+
+input,
+textarea,
+select {
+    font: inherit;
+    outline: none;
+    color: var(--heading-color);
+    font-family: var(--body-font-family);
+}
+label{
+    display: inline-block;
+    font-family: var(--body-font-family);
+    color: var(--heading-color);
+}
+
+input::placeholder{
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--fw4);
+    color: #3E3E3E80;
+}
+textarea::placeholder {
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--fw4);
+    color: #3E3E3E80;
+}
+
+.text-black{
+    color: #000000;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+/* -------------- #Reused Style -------------- */
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+}
+
+.flex-space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.light-pink {
+    width: 160px;
+    height: 160px;
+    background-color: var(--light-pink-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.light-yellow {
+    width: 160px;
+    height: 160px;
+    background-color: var(--light-yellow-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.light-green {
+    width: 160px;
+    height: 160px;
+    background-color: var(--light-green-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.light-blue {
+    width: 160px;
+    height: 160px;
+    background-color: var(--light-blue-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.sementic-red {
+    color: var(--sementic-red-color);
+}
+
+.sementic-green {
+    color: var(--Semantic-green);
+}
+
+.sementic-blue {
+    color: var(--sementic-blue-color);
+}
+
+.disable {
+    color: var(--disable-color);
+}
+
+.heading {
+    color: var(--heading-color);
+}
+
+/* ===Button=== */
+
+button {
+    font-family: var(--body-font-family);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: var(--btn-hover);
+}
+
+.large-btn {
+    height: 52px;
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: var(--fw6);
+    background-color: var(--primary-color);
+    border-radius: var(--card-border-radius);
+    padding: var(--large-btn-padding);
+}
+
+.m-large-btn {
+    height: 48px;
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--fw6);
+    background-color: var(--primary-color);
+    border-radius: var(--m-large-btn-border-radius);
+    padding: var(--m-large-btn-padding);
+}
+
+.m-btn {
+    height: 40px;
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--fw6);
+    background-color: var(--primary-color);
+    border-radius: var(--m-btn-border-radius);
+    padding: var(--m-btn-padding);
+}
+
+.s-btn {
+    height: 40px;
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: var(--fw6);
+    background-color: var(--primary-color);
+    border-radius: var(--s-btn-border-radius);
+    padding: var(--s-btn-padding);
+}
+
+
+.login-page{   
+    position: absolute;
+    top: 105px;
+    right: 170px;
+    width: 280px;
+    background: white;
+    box-shadow: 0 0 165px -4px #5569875f;
+    border-radius: 8px;
+    padding: 24px;
+    z-index: 99;
+    display: none !important;
+}
+
+.login-page .flex{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.dBlock{
+    display: block !important;
+}
+
+
+.login-heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.login-category hr{
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+}
+
+.login-heading h6{
+    font-weight: var(--fw5);
+}
+
+.login-heading p{
+    font-size: 14px;
+    font-weight: var(--fw4);
+    line-height: 20px;
+}
+
+.login-signup a{
+    padding: 10px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: var(--fw4);
+    line-height: 24px;
+    color: var(--primary-color);
+}
+
+.login-category{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.login-category a{
+    font-size: 14px;
+    font-weight: var(--fw4);
+    line-height: 20px;
+    color: var(--body-text-color);
+    display: block;
+    transition: 0.2s ease-in;
+}
+
+.login-category a:hover{
+    font-size: 14px;
+    font-weight: var(--fw7);
+    color: var(--primary-color);
+}
+
+.login-category a:nth-child(5){
+    margin-top: 15px;
+}
+.login-category a:nth-child(9){
+    margin-top: 15px;
+}
+
+.about-baaner, 
+.contact-baaner, 
+.blog-baaner, 
+.privacy-policy, 
+.terms-condition, 
+.return-policy, 
+.faq-baaner, 
+.product-details, 
+.Wishlist,
+.shopping_cart, 
+.orderPage, 
+.my-info {
+    height: 164px;
+    background-color: var(--light-pink-color);
+}
+
+
